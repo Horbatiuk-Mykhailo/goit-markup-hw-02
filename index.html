@@ -4,175 +4,185 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>Студія</title>
+    <link rel="stylesheet" href="./css/styles.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700;900&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
+    <!--Logo line-->
+    <header class="page-header">
       <nav>
-        <a class="logo-web link" href="/index.html"
-          >Web<span class="logo-studio">Studio</span></a
+        <a class="logo" href="./index.html"
+          >Web<span class="web">Studio</span></a
         >
-        <ul class="header-list list">
-          <li><a class="header-link link" href="./index.html">Студія</a></li>
-          <li><a class="header-link link" href="">Портфоліо</a></li>
-          <li><a class="header-link link" href="">Контакти</a></li>
+        <!--Site nav-->
+        <ul class="site-nav list">
+          <li>
+            <a href="./index.html" class="link current">Студія</a>
+          </li>
+          <li>
+            <a href="./portfolio.html" class="link">Портфоліо</a>
+          </li>
+          <li>
+            <a href="#" class="link">Контакти</a>
+          </li>
         </ul>
       </nav>
-      <ul class="header-list list">
+      <ul class="contacts list">
         <li>
-          <a class="header-mail link" href="mailto:info@devstudio.com"
+          <a href="mailto:info@devstudio.com" class="link"
             >info@devstudio.com</a
           >
         </li>
         <li>
-          <a class="header-tel link" href="tel:+380961111111"
-            >+38 096 111 11 11</a
-          >
+          <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
         </li>
       </ul>
     </header>
     <main>
+      <!--Hero-->
       <section class="hero">
-        <h1 class="main-title">Ефективні рішення для вашого бізнесу</h1>
-        <button class="main-btn" type="button">Замовити послугу</button>
+        <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
+        <button type="button" class="button primary">Замовити послугу</button>
       </section>
-      <section>
-        <ul class="header-list list">
+      <!--Features-->
+      <section class="features">
+        <h2 class="title-hidden">Особливості</h2>
+        <ul class="feature-list list">
           <li>
-            <h3 class="hero-features">Увага до деталей</h3>
-            <p class="hero-subtext">
+            <h3 class="title">Увага до деталей</h3>
+            <p class="text">
               Ідейні міркування, і навіть початок повсякденної роботи з
               формування позиції.
             </p>
           </li>
           <li>
-            <h3 class="hero-features">Пунктуальність</h3>
-            <p class="hero-subtext">
+            <h3 class="title">Пунктуальність</h3>
+            <p class="text">
               Завдання організації, особливо рамки і місце навчання кадрів тягне
               у себе.
             </p>
           </li>
           <li>
-            <h3 class="hero-features">Планування</h3>
-            <p class="hero-subtext">
+            <h3 class="title">Планування</h3>
+            <p class="text">
               Так само консультація з широким активом значною мірою зумовлює.
             </p>
           </li>
           <li>
-            <h3 class="hero-features">Технології</h3>
-            <p class="hero-subtext">
+            <h3 class="title">Сучасні технології</h3>
+            <p class="text">
               Значимість цих проблем настільки очевидна, що реалізація планових
               завдань.
             </p>
           </li>
         </ul>
       </section>
-      <section>
-        <h2 class="hero-footer">Чим ми займаємося</h2>
-        <ul class="header-list list">
+      <!--Work options-->
+      <section class="description">
+        <h2 class="section-title">Чим ми займаємося</h2>
+        <ul class="direction-list list">
           <li>
             <img
-              src="./img/abot-img-1.jpg"
-              alt="opportunities 1"
+              src="./images/photo5.jpg"
+              alt="Людина працює за комп'ютером"
               width="370"
               height="294"
             />
           </li>
           <li>
             <img
-              src="./img/abot-img-2.jpg"
-              alt="opportunities 2"
+              src="./images/photo6.jpg"
+              alt="Людина на моніторі розглядає варіанти розмітки сайтів для мобільних пристроїв"
               width="370"
               height="294"
             />
           </li>
           <li>
             <img
-              src="./img/abot-img-3.jpg"
-              alt="opportunities 3"
+              src="./images/photo7.jpg"
+              alt="Людина розглядає на планшеті палітру кольорів"
               width="370"
               height="294"
             />
           </li>
         </ul>
       </section>
-      <section>
-        <h2 class="hero-footer">Наша команда</h2>
-        <ul class="header-list list">
-          <li>
+      <!--Our team-->
+      <section class="team">
+        <h2 class="section-title">Наша команда</h2>
+        <!--Teams-->
+        <ul class="team-list list">
+          <li class="item">
             <img
-              src="./img/abot-img-4.jpg "
-              alt="team 1"
+              src="./images/photo1.jpg"
+              alt="Хлопець в окулярах та бородою щиро посміхається"
               width="270"
               height="260"
             />
-            <h3 class="hero-personal">Ігор Дем'яненко</h3>
-            <p class="hero-personal-text">Product Designer</p>
+            <h3 class="title">Ігор Дем'яненко</h3>
+            <p class="text">Product Designer</p>
           </li>
-          <li>
+          <li class="item">
             <img
-              src="./img/abot-img-5.jpg "
-              alt="team 2"
+              src="./images/photo2.jpg"
+              alt="Білява дівчина посміхається"
               width="270"
               height="260"
             />
-            <h3 class="hero-personal">Ольга Рєпіна</h3>
-            <p class="hero-personal-text">Frontend Developer</p>
+            <h3 class="title">Ольга Рєпіна</h3>
+            <p class="text">Frontend Developer</p>
           </li>
-          <li>
+          <li class="item">
             <img
-              src="./img/abot-img-6.jpg "
-              alt="team 3"
+              src="./images/photo3.jpg"
+              alt="Хлопець в білій сорочці посміхається"
               width="270"
               height="260"
             />
-            <h3 class="hero-personal">Микола Тарасов</h3>
-            <p class="hero-personal-text">Marketing</p>
+            <h3 class="title">Микола Тарасов</h3>
+            <p class="text">Marketing</p>
           </li>
-          <li>
+          <li class="item">
             <img
-              src="./img/abot-img-7.jpg "
-              alt="team 4"
+              src="./images/photo4.jpg"
+              alt="Чорнявий хлопець в окулярах та борідкою посміхається "
               width="270"
               height="260"
             />
-            <h3 class="hero-personal">Михайло Єрмаков</h3>
-            <p class="hero-personal-text">UI Designer</p>
+            <h3 class="title">Михайло Єрмаков</h3>
+            <p class="text">UI Designer</p>
           </li>
         </ul>
       </section>
     </main>
-    <footer class="footer">
-      <a class="footer-logo-web link" href="/index.html"
-        >Web<span class="footer-logo-studio">Studio</span></a
+    <footer class="basement">
+      <!--Підвал-->
+      <a class="logo-secondari" href="./index.html"
+        >Web<span class="web-secondari">Studio</span></a
       >
+      <!--Address-->
       <address>
-        <ul class="footer-list list">
-          <li>
+        <ul class="address list">
+          <li class="map-link">
             <a
-              class="footer-adress link"
               href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
               target="_blank"
               rel="noopener noreferrer nofollow"
+              class="link"
               >м. Київ, пр-т Лесі Українки, 26</a
             >
           </li>
-          <li>
-            <a class="footer-mail link" href="mailto:info@devstudio.com"
+          <li class="mail-link">
+            <a href="mailto:info@devstudio.com" class="link"
               >info@devstudio.com</a
             >
           </li>
-          <li>
-            <a class="footer-tel link" href="tel:+380961111111"
-              >+38 096 111 11 11</a
-            >
+          <li class="tel-link">
+            <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
           </li>
         </ul>
       </address>
